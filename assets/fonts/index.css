@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Italic-VariableFont-wght.ttf);
+ }
+
+ @font-face {
+     font-family: Roboto;
+     src: url(Roboto-Regular.ttf);
+ }
+ h1 {
+    font-family: Montserrat;
+ }

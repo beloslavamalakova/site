@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          .Div1 {
+          border: 5px outset rgb(92, 160, 160);
+          background-color: rgba(255, 255, 255, 0.274);
+          text-align: left;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="form with your data">
+    <meta name="keywords" content="forms, OS, operation system">
+    <meta name="author" content="Beloslava Malakova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="Div1">
+    <p>Choose your current OS:</p>
+    <form>
+        <input type="radio" id="Windows" name="fav_os" value="Windows">
+        <label for="Windows">Windows</label><br>
+        <input type="radio" id="Mac" name="fav_os" value="Mac">
+        <label for="Mac">Mac</label><br>
+        <input type="radio" id="a Linux distribution" name="fav_os" value="a Linux distribution">
+        <label for="a Linux distribution">a Linux distribution</label>
+    </form>
+    </div>
+    <br>
+    <div class="Div1">
+
+           <p>Which OSs have you tried?</p>
+
+      <form>
+        <input type="checkbox" id="os1" name="os1" value="a Linux distribution">
+        <label for="os1">a Linux distribution</label><br>
+        <input type="checkbox" id="os2" name="os2" value="Windows">
+        <label for="os2"> Windows</label><br>
+        <input type="checkbox" id="os3" name="os3" value="Mac">
+        <label for="os3"> Mac</label>
+      </form>
+    </div>
+ 
+
+      <br>
+      <div class="Div1">
+
+      <p>Sign up form <br> we ask for you OS in order to identify what type of support you might need</p>
+      <form action="/action_page.php">
+          <fieldset>
+              <legend>Your data:</legend>
+            <label for="fname">Your name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="years">Years:</label><br>
+            <input type="text" id="years" name="years"><br>
+            <label for="osss">OS:</label><br>
+            <input type="text" id="osss" name="osss"><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+
+      </form>
+      </div>
+
+      <div class="Div1">
+        <form action="/action_page.php">
+            <label for="season">favourite season:</label>
+            <select id="season" name="season" size="4" multiple>
+              <option value="winter">winter</option>
+              <option value="spring">spring</option>
+              <option value="summer">summer</option>
+              <option value="autumn">autumn</option>
+            </select><br><br>
+            <input type="submit">
+          </form>
+      </div>
+
+      <div class="Div1">
+        <label for="desktop">Your favourite desktop environment:</label>
+        <select id="desktop" name="desktop">
+          <option value="GNOME">GNOME</option>
+          <option value="KDE">KDE</option>
+          <option value="Cinnamon">Cinnamon</option>
+          <option value="your proprepriaty env (if you're on Windows/Mac)">your proprepriaty env (if you're on Windows/Mac)</option>
+        </select>
+      </div>
+
+</body>
+</html>
