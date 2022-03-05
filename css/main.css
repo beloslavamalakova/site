@@ -20,7 +20,63 @@ h1 {
      font-family: Roboto;
      src: url(../assets/fonts/Roboto-Black.ttf);
  }
+.myDiv {
+          border: 5px outset rgb(92, 160, 160);
+          background-color: white;
+          text-align: left;
+          box-shadow: 10px 10px;
+
+        }
+table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+table{
+            border-style: outset;
+        }
+table, th, td {
+            border: 1px solid black;
+        }
+th, td {
+            padding: 10px;
+        }
+table.secondary caption {
+            caption-side: bottom;
+        }
  h1 {
     font-family: Roboto;
     font-style:italic;
+    text-shadow: 2px 2px 5px red;
  }
+ table{
+  color: white;
+  box-shadow: 2px 2px 4px #000000;
+ }
+ .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+a:hover {
+            color: rgb(163, 50, 139);
+            box-shadow: 10px 10px 5px orangered;
+
+        }
