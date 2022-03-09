@@ -20,7 +20,7 @@ h1 {
      src: url(../assets/fonts/Roboto-Black.ttf);
  }
 .myDiv {
-          border: 5px outset rgb(92, 160, 160);
+          border: 5px outset rgb(10, 65, 65);
           background-color: white;
           text-align: left;
           box-shadow: 10px 10px;
@@ -98,4 +98,178 @@ a:hover {
       
 .zoomin:hover img {
             transform: scale(1.5);
+        }
+
+nav{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            padding: 18px;
+            background-color: #8b4646;
+            color: #F2ACAC;
+        }
+
+        .icon-holder{
+            margin-left: 12px;
+        }
+
+        .icon{
+            border: 2px dashed #F2ACAC;
+            border-radius: 10px;
+            padding: 6px;
+            font-family: Roboto;
+        }
+
+        .menuItems{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            grid-column-start: 2;
+        }
+
+        .menuItems a {
+            margin:0;
+            color: #F2ACAC;
+            text-decoration: none;
+            font-family: Roboto;
+            display: inline-block;
+        }
+
+        .menuItems a:after {
+            display:block;
+            content: '';
+            border-bottom: solid 3px #753030;
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+        }
+
+        .menuItems a:after{
+            transform-origin:  0% 50%;
+        }
+
+        .menuItems a:hover:after{
+            transform: scaleX(1);
+        }
+
+        .burger-icon{
+            border-radius: 10px;
+            padding: 8px;
+            display: none;
+        }
+
+        .burger-icon:hover{
+            cursor: pointer;
+        }
+
+        .burger-container {
+            position: relative;
+            height: 28px;
+            width: 36px;
+        }
+
+        .burger-bun-top,
+        .burger-bun-bot,
+        .burger-filling {
+            position: absolute;
+            display: block;
+            height: 4px;
+            width: 36px;
+            border-radius: 2px;
+            background: #635e5e;
+        }
+
+        .burger-bun-top {
+            top: 0;
+            transform-origin: 34px 2px;
+        }
+
+        .burger-bun-bot {
+            bottom: 0;
+            transform-origin: 34px 2px;
+        }
+
+        .burger-filling {
+            top: 12px;
+        }
+
+        .side-bar{
+            display: none;
+            height: 100vh;
+            width: 70%;
+            background-color: #a74545;
+            position: absolute;
+            top: 0;
+        }
+
+        .side-bar__nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            text-transform: uppercase;
+        }
+
+        .side-bar__nav a {
+            position: relative;
+            margin:0;
+            color: #F2ACAC;
+            text-decoration: none;
+            font-family: Roboto;
+            font-size: 1.3rem;
+            z-index: 2;
+            padding: 12px 6px;
+            margin-left: 24px;
+            flex: 1;
+        }
+
+        .side-bar__nav a:before {
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+
+        .side-bar__nav a:hover:before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .side-bar__nav a:before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            inset: 0 0 0 0;
+            background: #753030;
+            z-index: -1;
+            transition: transform .3s ease;
+        }
+
+        .side-bar__close{
+            border: none;
+            background-color: none;
+            font-weight: bold;
+            width: 12px;
+            background-color: inherit;
+            color: white;
+            align-self: flex-end;
+        }
+
+        @media (max-width: 425px){
+            nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menuItems{
+                display: none;
+            }
+
+            .burger-icon{
+                display: block;
+            }
+            
+            .side-bar{
+                display: flex;
+                flex-direction: column;
+            }
         }

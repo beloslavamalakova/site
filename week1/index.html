@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" type="image/x-icon" href="../img/peng.ico">
     <style>
-        /* unvisited link */.image-1:link {
+        .image-1:link {
             color: rgb(145, 201, 72)
         }
-        /* visited link */
         a:visited {
-            color: rgb(42, 107, 42)
+            color: rgb(52, 21, 73)
         }
-        /* mouse over link */
         a:hover {
             color: rgb(163, 50, 139);
             box-shadow: 10px 10px 5px orangered;
 
         }
-        /* selected link */
         a:active {
             color: rgb(20, 20, 94);
         }
@@ -78,11 +75,11 @@
             }
 
         body{
-            background-color: rgb(190, 96, 34)
+            background-color: rgb(199, 152, 121)
         }
 
         body{
-            color: #369BD9;
+            color: #000000;
             text-align: center;
         }
         
@@ -121,10 +118,46 @@
 </head>
 
 <body>
-    <section class="image-1"> </section>
-    <section class="image-2"> </section>
-    <section class="image-3"> </section>
-    <section class="image-4"> </section>
+        <nav>
+        <div class="icon-holder">
+            <span class="icon" ><a href="../img/penguin.jpg"></a>Penguin</span>
+        </div>
+        <div class="menuItems">
+                    <a href="../week1/index.html">Home</a>
+                    <a href="../week3/animations.html">Animations</a>
+                    <a href="../week2/orderedlist.html">Songs</a>
+                    <a href="../week2/unorderedlist.html">Books</a>
+                    <a href="../week2/discriptivelist.html">Food</a>
+                    <a href="../week3/forms.html">HTML forms</a>
+                    <a href="../week2/tables.html">Schedule</a>
+                    <a href="../week3/login.html">Log in</a>
+                    <a href="../week2/links.html">Links</a>
+                    <a href="../week2/images.html">Images</a>
+        </div>
+        <div class="burger-icon">
+            <div class="burger-container">
+                <span class="burger-bun-top"></span>
+                <span class="burger-filling"></span>
+                <span class="burger-bun-bot"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="side-bar">
+        <button class="side-bar__close m-5" id="close">X</button>
+        <div class="side-bar__nav">
+                    <a href="../week1/index.html">Home</a>
+                    <a href="../week3/animations.html">Animations</a>
+                    <a href="../week2/orderedlist.html">Songs</a>
+                    <a href="../week2/unorderedlist.html">Books</a>
+                    <a href="../week2/discriptivelist.html">Food</a>
+                    <a href="../week3/forms.html">HTML forms</a>
+                    <a href="../week2/tables.html">Schedule</a>
+                    <a href="../week3/login.html">Log in</a>
+                    <a href="../week2/links.html">Links</a>
+                    <a href="../week2/images.html">Images</a>
+        </div>
+    </div>
 
     <header>
 
@@ -144,11 +177,11 @@
 
 
                 <h1>So, why Linux?</h1>
-                <p>Aside from feeling like a pro, <br> it is also its free, <br> there are some cons, of course, but you would get used to it, i.e. from my experience the main issues comes from iMcrosoft products such as Excel, Word and etc. Thankfully due to Google you may use their alternatives or the free open-sourse options included in most Linux distros.</p>
+                <p>Aside from feeling like a pro, it is also its free, there are some cons, of course, but you would get used to it, i.e. from my experience the main issues comes from iMcrosoft products such as Excel, Word and etc. Thankfully due to Google you may use their alternatives or the free open-sourse options included in most Linux distros.</p>
                 <h2>But why <span style="color:white">Ubuntu?</span></h2>
-                <p>it's an ancestor of debian <br> and it's user-friendly.</p>
+                <p>it's an ancestor of debian and it's user-friendly.</p>
                 <h3>Why not Linux mint?</h3>
-                <p>Even worse compativility with the GPU if they're NVIDIA, <br> however mint is one of the most asthetically pleasing distros</p>
+                <p>Even worse compativility with the GPU if they're NVIDIA, however mint is one of the most asthetically pleasing distros</p>
                 <h4><span style="color:green">NVIDIA</span> drivers and their compatibility with Linux?</h4>
                 <p>Linus Torvalds has the answer haha.</p>
                 <h5>Still not sure?</h5>
@@ -164,15 +197,10 @@
         <section>
             <h2>Who is <span style="color:royalblue">Linus Torvalds</span>?</h2>
             <p>The main <span style="color:black">Linux kernel developer</span> since 1991, still active maintainer. Developed 'Git', the open-source control management system.</p>
-        </section>
         
-        <section>
             <h2><span style="color:rgb(92, 160, 160)">Fun fact:</span></h2>
             <p>If someone tells you they run on <span style="color:rgb(140, 153, 192)">Linux</span>, they are either lying, not informed enough or thinking you wouldn't understand (which is totally fine if you are not into STEM)-- Linux is the kernel of an operating system, people's hardware runs on OSs based on that kernel -- Ubuntu, Debian, Manjaro, Elementary, Linux Mint, Arch, Fedora, Kali Linux and many more... The most used ones ar probably Ubuntu and Linux Mint. As Arch is mainly used from a console its considered the "hard-core" distro.</p>
         </section>
-
-    </main>
-
     <aside>
     <div class="zoomin">
         <img src="../img/penguin.jpg"
@@ -184,6 +212,9 @@
 
         <p>KDE, <br> GNOME,<br> Cinnamon <br> and many more...</p>
     </aside>
+    </main>
+
+
 
 
     <div class="myDiv">
@@ -211,7 +242,10 @@
         </div>
 
     </footer>
-
+    <section class="image-1"> </section>
+    <section class="image-2"> </section>
+    <section class="image-3"> </section>
+    <section class="image-4"> </section>
 </body>
 
 </html>
