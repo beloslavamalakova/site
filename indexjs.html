@@ -96,7 +96,9 @@
               firstName : "Bela",
               lastName  : "Malakova",
               age     : 17,
-              eyeColor  : "brown"
+              eyeColor  : "brown",
+              pets: null,
+              hobbies: undefined
         };
         document.getElementById("personal data").innerHTML = person.firstName + " is " + person.age + " years old.";
         </script>
@@ -108,7 +110,27 @@
         typeof 'sunny' + "<br>" +
         typeof 17 + "<br>" +
         typeof (3) + "<br>" +
-        typeof (10 + 16);
+        typeof (10 + 16) + "<br>" +
+        typeof null +
+        typeof undefined;
+        </script>
+
+        <p id="numtostr"></p>
+        <script>
+            document.getElementById("numtostr").innerHTML =
+            parseInt('1234');
+            parseFloat('0.15');
+            parseInt('1238abc');
+            parseFloat('3.14ivan');
+            Number('999999999999999');
+            'Infinity';
+        </script>
+
+        <p id="infinity"></p>
+        <script>
+            let j = 1.797693134862315E+308;
+            let l = j * 1.001;
+            document.getElementById("infinity").innerHTML = l;
         </script>
 
     </body>
