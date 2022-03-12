@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>Introduction to JS</h1>
+        <p>test</p>
+        <script>
+        alert(5 + 6);
+        </script>
+
+        <p id="hi"></p>
+        <p id="hru"></p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("hi").innerHTML = "Hello World!";
+                document.getElementById("hru").innerHTML = "How are you?";
+            }
+        </script>
+
+        <script>
+            let a, b, c;
+            a = 2; b = 7; c = a + b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+
+        <script>
+             let x;
+             x = 6;
+             document.getElementById("demo").innerHTML = x; //some comment that works only within the js function
+        </script>
+
+        <script>
+             var z, y;
+             z = 5 + 6;
+             y = z * 10;
+             document.getElementById("demo").innerHTML = y;
+        </script>
+
+        <p id="names"></p>
+        <script>
+             let lastname, lastName;
+             lastName = "Bela";
+             lastname = "Malakowa";
+             document.getElementById("names").innerHTML = lastName;
+        </script>
+        
+        <p id="vars"></p>
+        <script>
+        var n = 3;
+        var p = 6;
+        var k = n + p;
+        document.getElementById("vars").innerHTML =
+        "The value of z is: " + z;
+        </script>
+
+        <p id="let."></p>
+        <script>
+        let d = 5;
+        let e = 6;
+        let f = d + e;
+        document.getElementById("demo").innerHTML = "The value of z is: " + f;
+        </script>
+
+        <p id="prices"></p>
+        
+        <script>
+        const price1 = 10;
+        const price2 = 16;
+        let total = price1 + price2;
+        document.getElementById("prices").innerHTML ="The total is: " + total;
+        </script>
+
+        <p id="string name"></p>
+        <script>
+            let question = "How are you doing?";
+            let person = "Bela";
+            let wheather = 'sunny';
+            let answer = 'I am fine, thank you!';
+            document.getElementById("string name").innerHTML =
+            question + "<br>" + answer;
+        
+        </script>
+        <p id="array"></p>
+        <script>
+        const icecream = ["chocolate","vanilla",'strawberry'];
+        document.getElementById("array").innerHTML = icecream[0];
+        </script>
+        
+        <p id="peronal data"></p>
+        <script>
+        const personality = {
+              firstName : "Bela",
+              lastName  : "Malakova",
+              age     : 17,
+              eyeColor  : "brown"
+        };
+        document.getElementById("personal data").innerHTML = person.firstName + " is " + person.age + " years old.";
+        </script>
+
+        <p id="typeof"></p>
+        <script>
+        document.getElementById("typeof").innerHTML = 
+        typeof "Bela" + "<br>" + 
+        typeof 'sunny' + "<br>" +
+        typeof 17 + "<br>" +
+        typeof (3) + "<br>" +
+        typeof (10 + 16);
+        </script>
+
+    </body>
+</html>
