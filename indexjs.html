@@ -133,5 +133,51 @@
             document.getElementById("infinity").innerHTML = l;
         </script>
 
-    </body>
+        <p id="length"></p>
+        <script>
+        let text1 = "1234";
+        let text4 = "Infinity";
+        let text5 = "999999999999999";
+
+        let length1 = text1.length;
+        let length4 = text4.length;
+        let length5 = text5.length;
+
+        document.getElementById("length").innerHTML = length1;
+        document.getElementById("length").innerHTML = length4;
+        document.getElementById("length").innerHTML = length5;
+        </script>
+
+        <p id="len2"></p>
+        <script>
+        let text2 = "1238abc";
+        let length2 = text2.length;
+        document.getElementById("length").innerHTML = length2;
+        </script>
+
+        <p id="len3"></p>
+        <script>
+        let text3 = "3.14ivan";
+        let length3 = text3.length;
+        document.getElementById("length").innerHTML = length3;
+        </script>
+
+        <p id="zad2"></p>
+        <script>
+        let server = `He had accidentally hacked into his company's server.`;
+        let result = server.substr(7, 12);
+        let result2 = server.substr(-8, 7)
+        document.getElementById("zad2").innerHTML = result;
+        document.getElementById("zad2").innerHTML = result2;
+        </script>
+        
+
+        <p id="zad3"></p>
+        <script>
+            let zadd3 = `It's important to remember to be aware of rampaging grizzly bears.`
+            console.log(a.replace("grizzly", "gummy"))
+            console.log(a.replace("aware of", "hungry for"))
+        </script>
+
+ </body>
 </html>
