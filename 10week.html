@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="multiplying"></p>
+    <script>
+    x=4;
+    y=0;
+    z=3;
+    const hour = new Date().getHours(); 
+    let result;
+    if (x*y*z > 0) {
+         result = "+";
+        } 
+    if (x*y*z == 0 ){
+        result = '0';
+    }
+    else {
+         result = "-"
+        }
+    document.getElementById("multiplying").innerHTML = result;
+    </script>
+
+    <p id="compare"></p>
+    <script>
+        x=3, y=9, z=7;
+        if(x>y && x>z){
+            hence = 'x is the biggest';
+        }
+        if (y>z && y>x){
+            hence ='y is the biggest';
+        }
+        if(z>x && z>y){
+            hence = 'z is the biggest'
+        }
+    document.getElementById("compare").innerHTML = hence;
+    </script>
+
+
+
+</body>
+</html>
