@@ -179,5 +179,30 @@
             console.log(a.replace("aware of", "hungry for"))
         </script>
 
+        <p id="caps"></p>
+        <script>
+        let capss = "Behind the window was a reflection";
+        let capss1 = text.toUpperCase();
+        document.getElementById("caps").innerHTML = capss1;
+        </script>
+
+        <p id="min"></p>
+        <script>
+        let minn = "Hello World!";
+        let minn1 = text.toLowerCase();
+        document.getElementById("min").innerHTML = minn1;
+        </script>
+
+        <p id="rounding"></p>
+        <script>
+            function roundToTwo(num) {    
+                return +(Math.round(num + "e+2")  + "e-2");
+            }
+            roundToTwo(3.42342)
+            roundToTwo(127.3)
+            roundToTwo(12)
+            roundToTwo(9.95732)
+        </script>
+
  </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+            <p id="rounding"></p>
+        <script>
+            function roundToTwo(num) {    
+                return +(Math.round(num + "e+2")  + "e-2");
+            }
+            document.getElementById("rounding").innerHTML =
+            roundToTwo(3.42342) + "<br>" +
+            roundToTwo(127.3) + "<br>" +
+            roundToTwo(12) + "<br>" +
+            roundToTwo(9.95732);
+        </script>
+
+        <p id="MAX"></p>
+        <script>
+        let x = Number.MAX_VALUE;
+        document.getElementById("MAX").innerHTML = x;
+        </script>
+
+        <p id="MIN"></p>
+        <script>
+        let y = Number.MIN_VALUE;
+        document.getElementById("MIN").innerHTML = y;
+        </script>
+
+        <p id="inf1"></p>
+        <script>
+        let z = Number.POSITIVE_INFINITY;
+        document.getElementById("inf1").innerHTML = z;
+        </script>
+
+        <p id="inf2"></p>
+        <script>
+        let o = Number.NEGATIVE_INFINITY;
+        document.getElementById("inf2").innerHTML = o;
+        </script>
+
+        <p id="array"></p>
+        <script>
+            const animals = ['panther', 'horse', 'mouse', 'gnu', 'mongoose', 'turtle', 'chimpanzee', 'wolf', 'mink'];
+            let text = animals.join(" | ");
+            document.getElementById("array").innerHTML = text;
+        </script>
+       <p id="array1"></p>
+       <p id="array2"></p>
+       <p id="array3"></p>
+       <p id="mergedanimals"></p>
+       <p id="alpha"></p>
+       <p id="nonalpha"></p>
+       <p id="indd"></p>
+       <p id="over"></p>
+        <script>
+        const animal = ['panther', 'horse', 'mouse', 'gnu', 'mongoose', 'turtle', 'chimpanzee', 'wolf', 'mink'];
+        document.getElementById("array1").innerHTML = animal;
+        animal.push("monkey", 'giraffe', 'snake');
+        document.getElementById("array2").innerHTML = animal;
+        animal.splice(0, 1);
+        animal.splice(2, 1);
+        animal.splice(9, 1);
+        document.getElementById("array3").innerHTML = animal;
+        const anim = ['bear', 'bug', 'pigeon'];
+        const lotsanimals = animal.concat(anim);
+        document.getElementById("mergedanimals").innerHTML = lotsanimals;
+        lotsanimals.sort();
+        document.getElementById("alpha").innerHTML = lotsanimals;
+        lotsanimals.reverse();
+        document.getElementById("nonalpha").innerHTML = lotsanimals;
+        console.log(lotsanimals.indexOf("mouse"));
+        console.log(lotsanimals.indexOf("mouse", -1));
+        const over5 = lotsanimals.filter(myFunction);
+        document.getElementById("over").innerHTML = over5;
+        function myFunction(value, index, array) {
+            return value > 5;
+        }
+        </script>
+
+
+</body>
+</html>
