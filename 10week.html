@@ -77,6 +77,29 @@
     document.getElementById('num').innerHTML = then;
 </script>
 
+<p id="till1"></p>
+<script>
+    x; //asign value for x
+    let txt='';
+    for (i=0; i<x; i++){
+        txt += x[i] + ' ';
+    }
+    document.getElementById("till1").innerHTML = txt;
+</script>
+
+<p id="arrfun"></p>
+<p id="arrfun1"></p>
+<script>
+    const nums = ['10', '17', '5', '42', '44', '31'];
+    function Minmaxnum(){
+        var max_of_array = Math.max.apply(Math, nums);
+        var min_of_array = Math.min.apply(Math, nums)
+    }
+    document.getElementById("arrfun").innerHTML = max_of_array;
+    document.getElementById("arrfun1").innerHTML = min_of_array;
+
+</script>
+
 <p id="matrix"></p>
 
 <script>
@@ -87,16 +110,6 @@ document.getElementById("matrix").innerHTML = myFunction(4, 5);
 const matrix = new Array(5).fill(0).map(() => new Array(4).fill(0));
 
 console.log(matrix[0][0]);
-</script>
-
-<p id="till1"></p>
-<script>
-    x;
-    let txt='';
-    for (i=0; i<x; i++){
-        txt += x[i] + ' ';
-    }
-    document.getElementById("till1").innerHTML = txt;
 </script>
 
 </body>
