@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-          table, th, td {
-            border: 1px solid black;
-        }
-        </style>
+       <head>
+      <script>
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+           
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+           
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+
+<style>
+         .title{
+         margin-bottom: 10px;
+         text-align:center;
+         width: 210px;
+         color:green;
+         border: solid black 2px;
+         }
+  
+         input[type="button"]
+         {
+         background-color:green;
+         color: black;
+         border: solid black 2px;
+         width:100%
+         }
+  
+         input[type="text"]
+         {
+         background-color:white;
+         border: solid black 2px;
+         width:100%
+         }
+      </style>
+    </head>
     </head>
 
     <body>
