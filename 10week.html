@@ -111,13 +111,18 @@
 <p id="matrix"></p>
 
 <script>
-    const b= prompt();
-let myFunction = a => a;
-a=4;
-document.getElementById("matrix").innerHTML = myFunction(4, 5);
-const matrix = new Array(5).fill(0).map(() => new Array(4).fill(0));
-
-console.log(matrix[0][0]);
+function printSquareMatrix(size) {
+    size <= 20;
+    var mat = Array.from(Array(size), () => new Array(size));
+    for (var i = 0; i <= size - 1; i++) {
+        for (var j = 0; j < size - 1; j++) {
+          mat[i][j] = '*';
+        }
+    mat[i][j] = '*';
+    }
+  return mat;
+}
+console.log(printSquareMatrix(3))
 </script>
 
 </body>
