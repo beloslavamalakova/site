@@ -1,197 +1,197 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head> </head>
+  <body>
+    <h1>Introduction to JS</h1>
+    <p>test</p>
+    <script>
+      alert(5 + 6)
+    </script>
 
-    </head>
-    <body>
+    <p id="hi"></p>
+    <p id="hru"></p>
 
-        <h1>Introduction to JS</h1>
-        <p>test</p>
-        <script>
-        alert(5 + 6);
-        </script>
+    <script>
+      function myFunction () {
+        document.getElementById('hi').innerHTML = 'Hello World!'
+        document.getElementById('hru').innerHTML = 'How are you?'
+      }
+    </script>
 
-        <p id="hi"></p>
-        <p id="hru"></p>
+    <script>
+      let a, b, c
+      a = 2
+      b = 7
+      c = a + b
+      document.getElementById('demo1').innerHTML = c
+    </script>
 
-        <script>
-            function myFunction() {
-                document.getElementById("hi").innerHTML = "Hello World!";
-                document.getElementById("hru").innerHTML = "How are you?";
-            }
-        </script>
+    <script>
+      let x
+      x = 6
+      document.getElementById('demo').innerHTML = x //some comment that works only within the js function
+    </script>
 
-        <script>
-            let a, b, c;
-            a = 2; b = 7; c = a + b;
-            document.getElementById("demo1").innerHTML = c;
-        </script>
+    <script>
+      var z, y
+      z = 5 + 6
+      y = z * 10
+      document.getElementById('demo').innerHTML = y
+    </script>
 
-        <script>
-             let x;
-             x = 6;
-             document.getElementById("demo").innerHTML = x; //some comment that works only within the js function
-        </script>
+    <p id="names"></p>
+    <script>
+      let lastname, lastName
+      lastName = 'Bela'
+      lastname = 'Malakowa'
+      document.getElementById('names').innerHTML = lastName
+    </script>
 
-        <script>
-             var z, y;
-             z = 5 + 6;
-             y = z * 10;
-             document.getElementById("demo").innerHTML = y;
-        </script>
+    <p id="vars"></p>
+    <script>
+      var n = 3
+      var p = 6
+      var k = n + p
+      document.getElementById('vars').innerHTML = 'The value of z is: ' + z
+    </script>
 
-        <p id="names"></p>
-        <script>
-             let lastname, lastName;
-             lastName = "Bela";
-             lastname = "Malakowa";
-             document.getElementById("names").innerHTML = lastName;
-        </script>
-        
-        <p id="vars"></p>
-        <script>
-        var n = 3;
-        var p = 6;
-        var k = n + p;
-        document.getElementById("vars").innerHTML =
-        "The value of z is: " + z;
-        </script>
+    <p id="let."></p>
+    <script>
+      let d = 5
+      let e = 6
+      let f = d + e
+      document.getElementById('demo').innerHTML = 'The value of z is: ' + f
+    </script>
 
-        <p id="let."></p>
-        <script>
-        let d = 5;
-        let e = 6;
-        let f = d + e;
-        document.getElementById("demo").innerHTML = "The value of z is: " + f;
-        </script>
+    <p id="prices"></p>
 
-        <p id="prices"></p>
-        
-        <script>
-        const price1 = 10;
-        const price2 = 16;
-        let total = price1 + price2;
-        document.getElementById("prices").innerHTML ="The total is: " + total;
-        </script>
+    <script>
+      const price1 = 10
+      const price2 = 16
+      let total = price1 + price2
+      document.getElementById('prices').innerHTML = 'The total is: ' + total
+    </script>
 
-        <p id="string name"></p>
-        <script>
-            let question = "How are you doing?";
-            let person = "Bela";
-            let wheather = 'sunny';
-            let answer = 'I am fine, thank you!';
-            document.getElementById("string name").innerHTML =
-            question + "<br>" + answer;
-        
-        </script>
-        <p id="array"></p>
-        <script>
-        const icecream = ["chocolate","vanilla",'strawberry'];
-        document.getElementById("array").innerHTML = icecream[0];
-        </script>
-        
-        <p id="peronal data"></p>
-        <script>
-        const personality = {
-              firstName : "Bela",
-              lastName  : "Malakova",
-              age     : 17,
-              eyeColor  : "brown",
-              pets: null,
-              hobbies: undefined
-        };
-        document.getElementById("personal data").innerHTML = person.firstName + " is " + person.age + " years old.";
-        </script>
+    <p id="string name"></p>
+    <script>
+      let question = 'How are you doing?'
+      let person = 'Bela'
+      let wheather = 'sunny'
+      let answer = 'I am fine, thank you!'
+      document.getElementById('string name').innerHTML =
+        question + '<br>' + answer
+    </script>
+    <p id="array"></p>
+    <script>
+      const icecream = ['chocolate', 'vanilla', 'strawberry']
+      document.getElementById('array').innerHTML = icecream[0]
+    </script>
 
-        <p id="typeof"></p>
-        <script>
-        document.getElementById("typeof").innerHTML = 
-        typeof "Bela" + "<br>" + 
-        typeof 'sunny' + "<br>" +
-        typeof 17 + "<br>" +
-        typeof (3) + "<br>" +
-        typeof (10 + 16) + "<br>" +
+    <p id="peronal data"></p>
+    <script>
+      const personality = {
+        firstName: 'Bela',
+        lastName: 'Malakova',
+        age: 17,
+        eyeColor: 'brown',
+        pets: null,
+        hobbies: undefined
+      }
+      document.getElementById('personal data').innerHTML =
+        person.firstName + ' is ' + person.age + ' years old.'
+    </script>
+
+    <p id="typeof"></p>
+    <script>
+      document.getElementById('typeof').innerHTML =
+        typeof 'Bela' +
+        '<br>' +
+        typeof 'sunny' +
+        '<br>' +
+        typeof 17 +
+        '<br>' +
+        typeof 3 +
+        '<br>' +
+        typeof (10 + 16) +
+        '<br>' +
         typeof null +
-        typeof undefined;
-        </script>
+        typeof undefined
+    </script>
 
-        <p id="numtostr"></p>
-        <script>
-            document.getElementById("numtostr").innerHTML =
-            parseInt('1234');
-            parseFloat('0.15');
-            parseInt('1238abc');
-            parseFloat('3.14ivan');
-            Number('999999999999999');
-            'Infinity';
-        </script>
+    <p id="numtostr"></p>
+    <script>
+      document.getElementById('numtostr').innerHTML = parseInt('1234')
+      parseFloat('0.15')
+      parseInt('1238abc')
+      parseFloat('3.14ivan')
+      Number('999999999999999')
+      ;('Infinity')
+    </script>
 
-        <p id="infinity"></p>
-        <script>
-            let j = 1.797693134862315E+308;
-            let l = j * 1.001;
-            document.getElementById("infinity").innerHTML = l;
-        </script>
+    <p id="infinity"></p>
+    <script>
+      let j = 1.797693134862315e308
+      let l = j * 1.001
+      document.getElementById('infinity').innerHTML = l
+    </script>
 
-        <p id="length"></p>
-        <script>
-        let text1 = "1234";
-        let text4 = "Infinity";
-        let text5 = "999999999999999";
+    <p id="length"></p>
+    <script>
+      let text1 = '1234'
+      let text4 = 'Infinity'
+      let text5 = '999999999999999'
 
-        let length1 = text1.length;
-        let length4 = text4.length;
-        let length5 = text5.length;
+      let length1 = text1.length
+      let length4 = text4.length
+      let length5 = text5.length
 
-        document.getElementById("length").innerHTML = length1;
-        document.getElementById("length").innerHTML = length4;
-        document.getElementById("length").innerHTML = length5;
-        </script>
+      document.getElementById('length').innerHTML = length1
+      document.getElementById('length').innerHTML = length4
+      document.getElementById('length').innerHTML = length5
+    </script>
 
-        <p id="len2"></p>
-        <script>
-        let text2 = "1238abc";
-        let length2 = text2.length;
-        document.getElementById("length").innerHTML = length2;
-        </script>
+    <p id="len2"></p>
+    <script>
+      let text2 = '1238abc'
+      let length2 = text2.length
+      document.getElementById('length').innerHTML = length2
+    </script>
 
-        <p id="len3"></p>
-        <script>
-        let text3 = "3.14ivan";
-        let length3 = text3.length;
-        document.getElementById("length").innerHTML = length3;
-        </script>
+    <p id="len3"></p>
+    <script>
+      let text3 = '3.14ivan'
+      let length3 = text3.length
+      document.getElementById('length').innerHTML = length3
+    </script>
 
-        <p id="zad2"></p>
-        <script>
-        let server = `He had accidentally hacked into his company's server.`;
-        let result = server.substr(7, 12);
-        let result2 = server.substr(-8, 7)
-        document.getElementById("zad2").innerHTML = result;
-        document.getElementById("zad2").innerHTML = result2;
-        </script>
-        
+    <p id="zad2"></p>
+    <script>
+      let server = `He had accidentally hacked into his company's server.`
+      let result = server.substr(7, 12)
+      let result2 = server.substr(-8, 7)
+      document.getElementById('zad2').innerHTML = result
+      document.getElementById('zad2').innerHTML = result2
+    </script>
 
-        <p id="zad3"></p>
-        <script>
-            let zadd3 = `It's important to remember to be aware of rampaging grizzly bears.`
-            console.log(a.replace("grizzly", "gummy"))
-            console.log(a.replace("aware of", "hungry for"))
-        </script>
+    <p id="zad3"></p>
+    <script>
+      let zadd3 = `It's important to remember to be aware of rampaging grizzly bears.`
+      console.log(a.replace('grizzly', 'gummy'))
+      console.log(a.replace('aware of', 'hungry for'))
+    </script>
 
-        <p id="caps"></p>
-        <script>
-        let capss = "Behind the window was a reflection";
-        let capss1 = text.toUpperCase();
-        document.getElementById("caps").innerHTML = capss1;
-        </script>
+    <p id="caps"></p>
+    <script>
+      let capss = 'Behind the window was a reflection'
+      let capss1 = text.toUpperCase()
+      document.getElementById('caps').innerHTML = capss1
+    </script>
 
-        <p id="min"></p>
-        <script>
-        let minn = "Hello World!";
-        let minn1 = text.toLowerCase();
-        document.getElementById("min").innerHTML = minn1;
-        </script>
-
- </body>
+    <p id="min"></p>
+    <script>
+      let minn = 'Hello World!'
+      let minn1 = text.toLowerCase()
+      document.getElementById('min').innerHTML = minn1
+    </script>
+  </body>
 </html>

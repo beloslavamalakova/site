@@ -1,218 +1,295 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="icon" type="image/x-icon" href="../img/peng.ico">
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../img/peng.ico" />
 
-<title>Tables</title>
+    <title>Tables</title>
     <style>
-        #rcorners3 {
-             border-radius: 20px;
-             border: 2px solid #000000;
-             padding: 20px; 
-             width: 150px;
-             height: 50px;  
-            }
-        
-        body{
-            background-color: rgb(159, 190, 167)
-        }
+      #rcorners3 {
+        border-radius: 20px;
+        border: 2px solid #000000;
+        padding: 20px;
+        width: 150px;
+        height: 50px;
+      }
 
-        body{
-            color: #369BD9;
-            text-align: center;
-            font-size: medium;
-        }
-        h1{
-            color: #1EBFC1;
-            font-weight: bold;
-        }
-        table {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-right: 20px;
-            margin-left: 20px;
-            }
-        table {
-             padding-top: 50px;
-             padding-right: 30px;
-             padding-bottom: 50px;
-             padding-left: 80px;
-        }
-        table:hover {
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-        }
+      body {
+        background-color: rgb(159, 190, 167);
+      }
+
+      body {
+        color: #369bd9;
+        text-align: center;
+        font-size: medium;
+      }
+      h1 {
+        color: #1ebfc1;
+        font-weight: bold;
+      }
+      table {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      table {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+      table:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
     </style>
-        <meta charset="UTF-8">
-        <meta name="description" content="tables, rowspan, colspan">
-        <meta name="keywords" content="HTML, tables, colspan, rowspan, schedule">
-        <meta name="author" content="Beloslava Malakova">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-        <nav>
-        <div class="icon-holder">
-            <span class="icon" ><a href="../img/penguin.jpg"></a>Penguin</span>
+    <meta charset="UTF-8" />
+    <meta name="description" content="tables, rowspan, colspan" />
+    <meta name="keywords" content="HTML, tables, colspan, rowspan, schedule" />
+    <meta name="author" content="Beloslava Malakova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="icon-holder">
+        <span class="icon"><a href="../img/penguin.jpg"></a>Penguin</span>
+      </div>
+      <div class="menuItems">
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">Songs</a>
+        <a href="../week2/unorderedlist.html">Books</a>
+        <a href="../week2/discriptivelist.html">Food</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">Schedule</a>
+        <a href="../week3/login.html">Log in</a>
+        <a href="../week2/links.html">Links</a>
+        <a href="../week2/images.html">Images</a>
+      </div>
+      <div class="burger-icon">
+        <div class="burger-container">
+          <span class="burger-bun-top"></span>
+          <span class="burger-filling"></span>
+          <span class="burger-bun-bot"></span>
         </div>
-        <div class="menuItems">
-                    <a href="../week1/index.html">Home</a>
-                    <a href="../week3/animations.html">Animations</a>
-                    <a href="../week2/orderedlist.html">Songs</a>
-                    <a href="../week2/unorderedlist.html">Books</a>
-                    <a href="../week2/discriptivelist.html">Food</a>
-                    <a href="../week3/forms.html">HTML forms</a>
-                    <a href="../week2/tables.html">Schedule</a>
-                    <a href="../week3/login.html">Log in</a>
-                    <a href="../week2/links.html">Links</a>
-                    <a href="../week2/images.html">Images</a>
-        </div>
-        <div class="burger-icon">
-            <div class="burger-container">
-                <span class="burger-bun-top"></span>
-                <span class="burger-filling"></span>
-                <span class="burger-bun-bot"></span>
-            </div>
-        </div>
+      </div>
     </nav>
 
     <div class="side-bar">
-        <button class="side-bar__close m-5" id="close">X</button>
-        <div class="side-bar__nav">
-                    <a href="../week1/index.html">Home</a>
-                    <a href="../week3/animations.html">Animations</a>
-                    <a href="../week2/orderedlist.html">Songs</a>
-                    <a href="../week2/unorderedlist.html">Books</a>
-                    <a href="../week2/discriptivelist.html">Food</a>
-                    <a href="../week3/forms.html">HTML forms</a>
-                    <a href="../week2/tables.html">Schedule</a>
-                    <a href="../week3/login.html">Log in</a>
-                    <a href="../week2/links.html">Links</a>
-                    <a href="../week2/images.html">Images</a>
-        </div>
+      <button class="side-bar__close m-5" id="close">X</button>
+      <div class="side-bar__nav">
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">Songs</a>
+        <a href="../week2/unorderedlist.html">Books</a>
+        <a href="../week2/discriptivelist.html">Food</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">Schedule</a>
+        <a href="../week3/login.html">Log in</a>
+        <a href="../week2/links.html">Links</a>
+        <a href="../week2/images.html">Images</a>
+      </div>
     </div>
     <center>
-    <h1>Tables</h1>
-    <br>
-        <table style="width:50%; padding-top: 50px; padding-right: 30px; padding-bottom: 50px; padding-left: 80px; font-size: medium;">
+      <h1>Tables</h1>
+      <br />
+      <table
+        style="width:50%; padding-top: 50px; padding-right: 30px; padding-bottom: 50px; padding-left: 80px; font-size: medium;"
+      >
         <tr style="font-size:medium">
-                <th></th>
-                <th style="font-family: Roboto; font-size: medium">Knocky</th>
-                <th style="font-family: Roboto; font-size: medium">Flor</th>
-                <th style="font-family: Roboto; font-size: medium">Ella</th>
-                <th style="font-family: Roboto; font-size: medium">Juan</th>
+          <th></th>
+          <th style="font-family: Roboto; font-size: medium">Knocky</th>
+          <th style="font-family: Roboto; font-size: medium">Flor</th>
+          <th style="font-family: Roboto; font-size: medium">Ella</th>
+          <th style="font-family: Roboto; font-size: medium">Juan</th>
         </tr>
         <tr>
-                <td style="font-family: Roboto; font-size: medium">Breed</td>
-                <td>Jack Russel</td>
-                <td>Poodle</td>
-                <td>Streetdog</td>
-                <td>Cocker Spaniel</td>
-            </tr>
-            <tr>
-                <td style="font-family: Roboto; font-size: medium">Age</td>
-                <td>16</td>
-                <td>9</td>
-                <td>10</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td style="font-family: Roboto; font-size: medium">Owner</td>
-                <td>Mother-in-Law</td>
-                <td>Me</td>
-                <td>Me</td>
-                <td>Sister-in-Law</td>
-            </tr>
-            <tr>
-                <td style="font-family: Roboto; font-size: medium">Eating Habits</td>
-                <td>Eats everyone's leftovers</td>
-                <td>Nibbles at food</td>
-                <td>Hearty eater</td>
-                <td>Will eat till he explodes</td>
-            </tr>
-    </table>
-    <br>
-    <table style="width:60%">
-        <tr style="text-align:center; font-weight:bold; font-family: Roboto; font-size:medium;">
-            <td style="text-align:center; font-weight:bold; font-family: Roboto; font-size: 1.3rem; font-size:small;">Day/Period</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">I <br> 9:30-10:20</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">II <br>10:20-11:10</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem; font-size:small">III <br>11:10--12:00</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">12:00-12:40</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">IV <br> 12:40-1:30</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">V <br> 1:30-2:20</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">VI <br> 2:20-3:10</td>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small">VII <br> 3:10-4:00</td>
+          <td style="font-family: Roboto; font-size: medium">Breed</td>
+          <td>Jack Russel</td>
+          <td>Poodle</td>
+          <td>Streetdog</td>
+          <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+          <td style="font-family: Roboto; font-size: medium">Age</td>
+          <td>16</td>
+          <td>9</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td style="font-family: Roboto; font-size: medium">Owner</td>
+          <td>Mother-in-Law</td>
+          <td>Me</td>
+          <td>Me</td>
+          <td>Sister-in-Law</td>
+        </tr>
+        <tr>
+          <td style="font-family: Roboto; font-size: medium">Eating Habits</td>
+          <td>Eats everyone's leftovers</td>
+          <td>Nibbles at food</td>
+          <td>Hearty eater</td>
+          <td>Will eat till he explodes</td>
+        </tr>
+      </table>
+      <br />
+      <table style="width:60%">
+        <tr
+          style="text-align:center; font-weight:bold; font-family: Roboto; font-size:medium;"
+        >
+          <td
+            style="text-align:center; font-weight:bold; font-family: Roboto; font-size: 1.3rem; font-size:small;"
+          >
+            Day/Period
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            I <br />
+            9:30-10:20
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            II <br />10:20-11:10
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem; font-size:small"
+          >
+            III <br />11:10--12:00
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            12:00-12:40
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            IV <br />
+            12:40-1:30
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            V <br />
+            1:30-2:20
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            VI <br />
+            2:20-3:10
+          </td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem;font-size:small"
+          >
+            VII <br />
+            3:10-4:00
+          </td>
         </tr>
         <tr style="font-size:medium">
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Monday</td>
-            <td>Eng</td>
-            <td>Mat</td>
-            <td>Che</td>
-            <td rowspan="6" style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">L <br>U<br>N<br>C<br>H</td>
-            <th colspan="3"> LAB</th>
-            <td>Phy</td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Monday
+          </td>
+          <td>Eng</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td
+            rowspan="6"
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            L <br />U<br />N<br />C<br />H
+          </td>
+          <th colspan="3">LAB</th>
+          <td>Phy</td>
         </tr>
         <tr>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Tuesday</td>
-            <th colspan="3"> LAB</th>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <td>SPORTS</td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Tuesday
+          </td>
+          <th colspan="3">LAB</th>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td>SPORTS</td>
         </tr>
         <tr>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Wednesday</td>
-            <td>Mat</td>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <th colspan="3">Library</th>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Wednesday
+          </td>
+          <td>Mat</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <th colspan="3">Library</th>
         </tr>
         <tr>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Thursday</td>
-            <td>Phy</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <th colspan="3">LAB</th>
-            <td>Mat</td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Thursday
+          </td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <th colspan="3">LAB</th>
+          <td>Mat</td>
         </tr>
         <tr>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Friday</td>
-            <th colspan="3">LAB</th>
-            <td>Mat</td>
-            <td>Che</td>
-            <td>Eng</td>
-            <td>Phy</td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Friday
+          </td>
+          <th colspan="3">LAB</th>
+          <td>Mat</td>
+          <td>Che</td>
+          <td>Eng</td>
+          <td>Phy</td>
         </tr>
         <tr>
-            <td style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem">Saturday</td>
-            <td>Eng</td>
-            <td>Che</td>
-            <td>Mat</td>
-            <th colspan="3">SEMINAR</th>
-            <td>SPORTS</td>
+          <td
+            style="text-align:center; font-weight:bold;font-family: Roboto; font-size: 1.3rem"
+          >
+            Saturday
+          </td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <th colspan="3">SEMINAR</th>
+          <td>SPORTS</td>
         </tr>
-    </table>
+      </table>
     </center>
-<div class="footer">
-    <p><left>Author: <span style="color:pink">Bela</span></left></p>
-    <center>
-           <button>FAQ</button> <button>Contacts</button> <button>GDPR</button>
-    </center>
-            <right>
-                    <a href="../week1/index.html">Home</a>
-                <a href="../week3/animations.html">Animations</a>
-                <a href="../week2/orderedlist.html">HTML ordered list</a>
-                <a href="../week2/unorderedlist.html">HTML unordered list</a>
-                <a href="../week2/links.html">HTML links</a>
-                <a href="../week2/discriptivelist.html">HTML discriptive lists</a>
-                <a href="../week3/forms.html">HTML forms</a>
-                <a href="../week2/tables.html">HTML table</a>
-                <a href="../week3/login.html">Log in</a>
-            </right>
-</div>
-    <a href="https://www.tutorialrepublic.com/html-tutorial/html-tables.php ">information on html tables - tap for more</a><br>
-
-</body>
+    <div class="footer">
+      <p>
+        <left>Author: <span style="color:pink">Bela</span></left>
+      </p>
+      <center>
+        <button>FAQ</button> <button>Contacts</button> <button>GDPR</button>
+      </center>
+      <right>
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">HTML ordered list</a>
+        <a href="../week2/unorderedlist.html">HTML unordered list</a>
+        <a href="../week2/links.html">HTML links</a>
+        <a href="../week2/discriptivelist.html">HTML discriptive lists</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">HTML table</a>
+        <a href="../week3/login.html">Log in</a>
+      </right>
+    </div>
+    <a href="https://www.tutorialrepublic.com/html-tutorial/html-tables.php "
+      >information on html tables - tap for more</a
+    ><br />
+  </body>
 </html>

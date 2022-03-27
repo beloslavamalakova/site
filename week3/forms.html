@@ -1,155 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-      <link rel="stylesheet" href="../css/main.css">
-  <link rel="icon" type="image/x-icon" href="../img/peng.ico">
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/x-icon" href="../img/peng.ico" />
 
     <style>
-          #rcorners3 {
-             border-radius: 20px;
-             border: 2px solid #000000;
-             padding: 20px; 
-             width: 150px;
-             height: 50px;  
-            }
-          .Div1 {
-          border: 5px outset rgb(92, 160, 160);
-          background-color: rgba(255, 255, 255, 0.274);
-          text-align: left;
-        }
+      #rcorners3 {
+        border-radius: 20px;
+        border: 2px solid #000000;
+        padding: 20px;
+        width: 150px;
+        height: 50px;
+      }
+      .Div1 {
+        border: 5px outset rgb(92, 160, 160);
+        background-color: rgba(255, 255, 255, 0.274);
+        text-align: left;
+      }
     </style>
-    <meta charset="UTF-8">
-    <meta name="description" content="form with your data">
-    <meta name="keywords" content="forms, OS, operation system">
-    <meta name="author" content="Beloslava Malakova">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-      <nav>
-        <div class="icon-holder">
-            <span class="icon" ><a href="../img/penguin.jpg"></a>Penguin</span>
+    <meta charset="UTF-8" />
+    <meta name="description" content="form with your data" />
+    <meta name="keywords" content="forms, OS, operation system" />
+    <meta name="author" content="Beloslava Malakova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="icon-holder">
+        <span class="icon"><a href="../img/penguin.jpg"></a>Penguin</span>
+      </div>
+      <div class="menuItems">
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">Songs</a>
+        <a href="../week2/unorderedlist.html">Books</a>
+        <a href="../week2/discriptivelist.html">Food</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">Schedule</a>
+        <a href="../week3/login.html">Log in</a>
+        <a href="../week2/links.html">Links</a>
+        <a href="../week2/images.html">Images</a>
+      </div>
+      <div class="burger-icon">
+        <div class="burger-container">
+          <span class="burger-bun-top"></span>
+          <span class="burger-filling"></span>
+          <span class="burger-bun-bot"></span>
         </div>
-        <div class="menuItems">
-                    <a href="../week1/index.html">Home</a>
-                    <a href="../week3/animations.html">Animations</a>
-                    <a href="../week2/orderedlist.html">Songs</a>
-                    <a href="../week2/unorderedlist.html">Books</a>
-                    <a href="../week2/discriptivelist.html">Food</a>
-                    <a href="../week3/forms.html">HTML forms</a>
-                    <a href="../week2/tables.html">Schedule</a>
-                    <a href="../week3/login.html">Log in</a>
-                    <a href="../week2/links.html">Links</a>
-                    <a href="../week2/images.html">Images</a>
-        </div>
-        <div class="burger-icon">
-            <div class="burger-container">
-                <span class="burger-bun-top"></span>
-                <span class="burger-filling"></span>
-                <span class="burger-bun-bot"></span>
-            </div>
-        </div>
+      </div>
     </nav>
 
     <div class="side-bar">
-        <button class="side-bar__close m-5" id="close">X</button>
-        <div class="side-bar__nav">
-                    <a href="../week1/index.html">Home</a>
-                    <a href="../week3/animations.html">Animations</a>
-                    <a href="../week2/orderedlist.html">Songs</a>
-                    <a href="../week2/unorderedlist.html">Books</a>
-                    <a href="../week2/discriptivelist.html">Food</a>
-                    <a href="../week3/forms.html">HTML forms</a>
-                    <a href="../week2/tables.html">Schedule</a>
-                    <a href="../week3/login.html">Log in</a>
-                    <a href="../week2/links.html">Links</a>
-                    <a href="../week2/images.html">Images</a>
-        </div>
+      <button class="side-bar__close m-5" id="close">X</button>
+      <div class="side-bar__nav">
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">Songs</a>
+        <a href="../week2/unorderedlist.html">Books</a>
+        <a href="../week2/discriptivelist.html">Food</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">Schedule</a>
+        <a href="../week3/login.html">Log in</a>
+        <a href="../week2/links.html">Links</a>
+        <a href="../week2/images.html">Images</a>
+      </div>
     </div>
     <div class="Div1">
-    <p>Choose your current OS:</p>
-    <form>
-        <input type="radio" id="Windows" name="fav_os" value="Windows">
-        <label for="Windows">Windows</label><br>
-        <input type="radio" id="Mac" name="fav_os" value="Mac">
-        <label for="Mac">Mac</label><br>
-        <input type="radio" id="a Linux distribution" name="fav_os" value="a Linux distribution">
+      <p>Choose your current OS:</p>
+      <form>
+        <input type="radio" id="Windows" name="fav_os" value="Windows" />
+        <label for="Windows">Windows</label><br />
+        <input type="radio" id="Mac" name="fav_os" value="Mac" />
+        <label for="Mac">Mac</label><br />
+        <input
+          type="radio"
+          id="a Linux distribution"
+          name="fav_os"
+          value="a Linux distribution"
+        />
         <label for="a Linux distribution">a Linux distribution</label>
-    </form>
+      </form>
     </div>
-    <br>
+    <br />
     <div class="Div1">
-
-           <p>Which OSs have you tried?</p>
+      <p>Which OSs have you tried?</p>
 
       <form>
-        <input type="checkbox" id="os1" name="os1" value="a Linux distribution">
-        <label for="os1">a Linux distribution</label><br>
-        <input type="checkbox" id="os2" name="os2" value="Windows">
-        <label for="os2"> Windows</label><br>
-        <input type="checkbox" id="os3" name="os3" value="Mac">
+        <input
+          type="checkbox"
+          id="os1"
+          name="os1"
+          value="a Linux distribution"
+        />
+        <label for="os1">a Linux distribution</label><br />
+        <input type="checkbox" id="os2" name="os2" value="Windows" />
+        <label for="os2"> Windows</label><br />
+        <input type="checkbox" id="os3" name="os3" value="Mac" />
         <label for="os3"> Mac</label>
       </form>
     </div>
- 
 
-      <br>
-      <div class="Div1">
-
-      <p>Sign up form <br> we ask for you OS in order to identify what type of support you might need</p>
+    <br />
+    <div class="Div1">
+      <p>
+        Sign up form <br />
+        we ask for you OS in order to identify what type of support you might
+        need
+      </p>
       <form action="/action_page.php">
-          <fieldset>
-              <legend>Your data:</legend>
-            <label for="fname">Your name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="years">Years:</label><br>
-            <input type="text" id="years" name="years"><br>
-            <label for="osss">OS:</label><br>
-            <input type="text" id="osss" name="osss"><br>
-            <input type="submit" value="Submit">
-          </fieldset>
-
+        <fieldset>
+          <legend>Your data:</legend>
+          <label for="fname">Your name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="years">Years:</label><br />
+          <input type="text" id="years" name="years" /><br />
+          <label for="osss">OS:</label><br />
+          <input type="text" id="osss" name="osss" /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
       </form>
-      </div>
+    </div>
 
-      <div class="Div1">
-        <form action="/action_page.php">
-            <label for="season">favourite season:</label>
-            <select id="season" name="season" size="4" multiple>
-              <option value="winter">winter</option>
-              <option value="spring">spring</option>
-              <option value="summer">summer</option>
-              <option value="autumn">autumn</option>
-            </select><br><br>
-            <input type="submit">
-          </form>
-      </div>
+    <div class="Div1">
+      <form action="/action_page.php">
+        <label for="season">favourite season:</label>
+        <select id="season" name="season" size="4" multiple>
+          <option value="winter">winter</option>
+          <option value="spring">spring</option>
+          <option value="summer">summer</option>
+          <option value="autumn">autumn</option> </select
+        ><br /><br />
+        <input type="submit" />
+      </form>
+    </div>
 
-      <div class="Div1">
-        <label for="desktop">Your favourite desktop environment:</label>
-        <select id="desktop" name="desktop">
-          <option value="GNOME">GNOME</option>
-          <option value="KDE">KDE</option>
-          <option value="Cinnamon">Cinnamon</option>
-          <option value="your proprepriaty env (if you're on Windows/Mac)">your proprepriaty env (if you're on Windows/Mac)</option>
-        </select>
-      </div>
+    <div class="Div1">
+      <label for="desktop">Your favourite desktop environment:</label>
+      <select id="desktop" name="desktop">
+        <option value="GNOME">GNOME</option>
+        <option value="KDE">KDE</option>
+        <option value="Cinnamon">Cinnamon</option>
+        <option value="your proprepriaty env (if you're on Windows/Mac)"
+          >your proprepriaty env (if you're on Windows/Mac)</option
+        >
+      </select>
+    </div>
 
-<div class="footer">
-    <p><left>Author: <span style="color:pink">Bela</span></left></p>
-    <center>
-           <button>FAQ</button> <button>Contacts</button> <button>GDPR</button>
-    </center>
-            <right>
-                    <a href="../week1/index.html">Home</a>
-                <a href="../week3/animations.html">Animations</a>
-                <a href="../week2/orderedlist.html">HTML ordered list</a>
-                <a href="../week2/unorderedlist.html">HTML unordered list</a>
-                <a href="../week2/links.html">HTML links</a>
-                <a href="../week2/discriptivelist.html">HTML discriptive lists</a>
-                <a href="../week3/forms.html">HTML forms</a>
-                <a href="../week2/tables.html">HTML table</a>
-                <a href="../week3/login.html">Log in</a>
-            </right>
-</div>
-</body>
+    <div class="footer">
+      <p>
+        <left>Author: <span style="color:pink">Bela</span></left>
+      </p>
+      <center>
+        <button>FAQ</button> <button>Contacts</button> <button>GDPR</button>
+      </center>
+      <right>
+        <a href="../week1/index.html">Home</a>
+        <a href="../week3/animations.html">Animations</a>
+        <a href="../week2/orderedlist.html">HTML ordered list</a>
+        <a href="../week2/unorderedlist.html">HTML unordered list</a>
+        <a href="../week2/links.html">HTML links</a>
+        <a href="../week2/discriptivelist.html">HTML discriptive lists</a>
+        <a href="../week3/forms.html">HTML forms</a>
+        <a href="../week2/tables.html">HTML table</a>
+        <a href="../week3/login.html">Log in</a>
+      </right>
+    </div>
+  </body>
 </html>
