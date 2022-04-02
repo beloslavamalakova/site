@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            async function ask(){
+                let a = window.prompt("your number");
+                typeof Number(a) != 'number' ? a="no-number": ()=>{};
+                return a;
+            }
+            function confirm_N(str){
+                return new Promise((resolve,reject)=>{
+                    let bool = window.confirm("do you want to roll: " +str);
+                    let log = Number(str);
+                    let rnd = Math.floor(Math.random()*5+1);
+                    console.log(rnd);
+                    if(bool){
+                        if(log==rnd) resolve(2);
+                        if(log==rnd-1 && log==rnd+1 && log<=6 && log>=1) resolve(1);
+                        resolve(0);
+                    }else reject();
+                });
+            }
+            function play(result){
+                ask().then(
+                    (str)=>confirm_N(str).then(
+                        (r)=>play(result+r).catch(
+                            ()=>alert("your result is:" + result)
+                        )
+                    )
+                )
+            }
+            play(0);
+        </script>
+    </body>
+</html>
