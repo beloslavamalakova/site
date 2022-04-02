@@ -7,10 +7,10 @@ MyRequest.onload = () =>{
       let myWindow = window.open("", "PersonalInfo");
       myWindow.document.write( <title>User information</title>);
       for (const property in data[i]){
-        myWindow.document.write('${propert}: ${JSON.stringify(data[i][property])} <br>');
+        myWindow.document.write(`${property}: ${JSON.stringify(data[i][property])} <br>`);
       }
     });
-    myDiv.innerHTML - "<img class-'centering' src-'"+data[i].avatar + '>' +
+    myDiv.innerHTML - "<img class='centerImg' src="+data[i].avatar + '>' +
          "<p> Full name: " + data[i].first_name + "" + data[i].last_name+ "</p>" +
          "<p> username: " + data[i].username+ "</p>" +
          "<p> email: " + data[i].email + "</p>" +
@@ -19,5 +19,5 @@ MyRequest.onload = () =>{
 
   } 
 };
-MyRequest.open('GET, "https://random-data-api.com/api/users/random_user?size=15");
+MyRequest.open('GET', "https://random-data-api.com/api/users/random_user?size=15");
 MyRequest.send();
