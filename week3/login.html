@@ -2,24 +2,24 @@
 <html>
   <head>
     <link rel="icon" type="image/x-icon" href="../img/peng.ico" />
-
+    <script src="" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
+
     <meta charset="UTF-8" />
     <meta name="description" content="log in" />
     <meta name="keywords" content="sing up, log in" />
     <meta name="author" content="Beloslava Malakova" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      #rcorners3 {
-        border-radius: 20px;
-        border: 2px solid #000000;
-        padding: 20px;
-        width: 150px;
-        height: 50px;
-      }
-    </style>
+    
   </head>
   <body>
+    <div>
+      <div id="tab-btn">
+        <a href="a" class="login-tab active">Log in</a>
+        <a href="a" class="register-tab">Sign up</a>
+      </div>
+    </div>
     <nav>
       <div class="icon-holder">
         <span class="icon"><a href="../img/penguin.jpg"></a>Penguin</span>
@@ -76,54 +76,56 @@
         <input type="submit" value="Submit" />
       </fieldset>
     </form>
+    <div class="register-tab">
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>User information</legend>
+          <label for="firstname">First name:</label><br />
+          <input type="text" id="firstname" name="firstname" size="50" /><br />
+          <label for="surname">Surname:</label><br />
+          <input type="text" id="surname" name="surname" size="50" /><br />
+          <label for="mail">email:</label><br />
+          <input type="text" id="mail" name="mail" size="50" /><br />
+          <label for="password">Password:</label><br />
+          <input type="text" id="password" name="password" size="8" /><br />
+          <label for="password2">Enter again you password:</label><br />
+          <input type="text" id="password2" name="password2" size="8" /><br />
+        </fieldset>
+        <fieldset>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </fieldset>
 
-    <form action="/action_page.php">
-      <fieldset>
-        <legend>User information</legend>
-        <label for="firstname">First name:</label><br />
-        <input type="text" id="firstname" name="firstname" size="50" /><br />
-        <label for="surname">Surname:</label><br />
-        <input type="text" id="surname" name="surname" size="50" /><br />
-        <label for="mail">email:</label><br />
-        <input type="text" id="mail" name="mail" size="50" /><br />
-        <label for="password">Password:</label><br />
-        <input type="text" id="password" name="password" size="8" /><br />
-        <label for="password2">Enter again you password:</label><br />
-        <input type="text" id="password2" name="password2" size="8" /><br />
-      </fieldset>
-      <fieldset>
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-          <option value="male">male</option>
-          <option value="female">female</option>
-          <option value="other">other</option>
-        </select>
-      </fieldset>
+        <fieldset>
+          <label for="bd">Birthday:</label><br />
+          <input type="text" id="bd" name="bd" size="12" /><br />
+          <label for="phone">Phone number:</label><br />
+          <input type="text" id="phone" name="phone" size="15" /><br />
+        </fieldset>
+        <fieldset>
+          <p>Do you agree with the terms of use?</p>
+          <input type="checkbox" id="ans1" name="ans1" value="yes" />
+          <label for="ans1">Yes</label><br />
+          <input type="checkbox" id="ans2" name="ans2" value="no" />
+          <label for="ans2"> No</label><br />
+          <input
+            type="checkbox"
+            id="ans3"
+            name="ans3"
+            value="Ï.d like to know more about them :)"
+          />
+          <label for="ans3"> I'd like to know more about them</label>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
 
-      <fieldset>
-        <label for="bd">Birhtday:</label><br />
-        <input type="text" id="bd" name="bd" size="12" /><br />
-        <label for="phone">Phone number:</label><br />
-        <input type="text" id="phone" name="phone" size="15" /><br />
-      </fieldset>
-      <fieldset>
-        <p>Do you agree with the terms of use?</p>
-        <input type="checkbox" id="ans1" name="ans1" value="yes" />
-        <label for="ans1">Yes</label><br />
-        <input type="checkbox" id="ans2" name="ans2" value="no" />
-        <label for="ans2"> No</label><br />
-        <input
-          type="checkbox"
-          id="ans3"
-          name="ans3"
-          value="Ï.d like to know more about them :)"
-        />
-        <label for="ans3"> I'd like to know more about them</label>
-      </fieldset>
-      <fieldset>
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
     <div class="footer">
       <p>
         <left>Author: <span style="color:pink">Bela</span></left>
