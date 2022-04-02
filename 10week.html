@@ -1,129 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
+  <head> </head>
+  <body>
     <p id="multiplying"></p>
     <script>
-    x=4;
-    y=0;
-    z=3;
-    const hour = new Date().getHours(); 
-    let result;
-    if (x*y*z > 0) {
-         result = "+";
-        } 
-    if (x*y*z == 0 ){
-        result = '0';
-    }
-    else {
-         result = "-"
-        }
-    document.getElementById("multiplying").innerHTML = result;
+      x = 4
+      y = 0
+      z = 3
+      const hour = new Date().getHours()
+      let result
+      if (x * y * z > 0) {
+        result = '+'
+      }
+      if (x * y * z == 0) {
+        result = '0'
+      } else {
+        result = '-'
+      }
+      document.getElementById('multiplying').innerHTML = result
     </script>
 
     <p id="compare"></p>
     <script>
-        x=3, y=9, z=7;
-        if(x>y && x>z){
-            hence = 'x is the biggest';
-        }
-        if (y>z && y>x){
-            hence ='y is the biggest';
-        }
-        if(z>x && z>y){
-            hence = 'z is the biggest'
-        }
-    document.getElementById("compare").innerHTML = hence;
+      ;(x = 3), (y = 9), (z = 7)
+      if (x > y && x > z) {
+        hence = 'x is the biggest'
+      }
+      if (y > z && y > x) {
+        hence = 'y is the biggest'
+      }
+      if (z > x && z > y) {
+        hence = 'z is the biggest'
+      }
+      document.getElementById('compare').innerHTML = hence
     </script>
 
-<p id="num"></p>
+    <p id="num"></p>
 
-<script>
-    const a = prompt();
-    if (a==1){
-        then = 'едно';
-    }
-    if (a==2){
-        then = 'две';
-    }
-    if (a==3){
-        then = 'три';
-    }
-    if (a==4){
-        then = 'четири';
-    }
-    if (a==5){
-        then = 'пет';
-    }
-    if (a==6){
-        then = 'шест';
-    }
-    if (a==7){
-        then = 'седем';
-    }
-    if (a==8){
-        then = 'осем';
-    }
-    if (a==9){
-        then = 'девет';
-    }
-    if (a=0){
-        then = 'нула';
-    }
-    else {
-        then = 'invalid input data';
-    }
-    document.getElementById('num').innerHTML = then;
-</script>
+    <script>
+      const a = prompt()
+      if (a == 1) {
+        then = 'едно'
+      }
+      if (a == 2) {
+        then = 'две'
+      }
+      if (a == 3) {
+        then = 'три'
+      }
+      if (a == 4) {
+        then = 'четири'
+      }
+      if (a == 5) {
+        then = 'пет'
+      }
+      if (a == 6) {
+        then = 'шест'
+      }
+      if (a == 7) {
+        then = 'седем'
+      }
+      if (a == 8) {
+        then = 'осем'
+      }
+      if (a == 9) {
+        then = 'девет'
+      }
+      if ((a = 0)) {
+        then = 'нула'
+      } else {
+        then = 'invalid input data'
+      }
+      document.getElementById('num').innerHTML = then
+    </script>
 
-<p id="till1"></p>
-<script>
-    x; //asign value for x
-    let txt='';
-    for (i=0; i<x; i++){
-        txt += x[i] + ' ';
-    }
-    document.getElementById("till1").innerHTML = txt;
-</script>
+    <p id="till1"></p>
+    <script>
+      x //asign value for x
+      let txt = ''
+      for (i = 0; i < x; i++) {
+        txt += x[i] + ' '
+      }
+      document.getElementById('till1').innerHTML = txt
+    </script>
 
-<p id="arrfun"></p>
-<p id="arrfun1"></p>
-<script>
-    const nums = ['10', '17', '5', '42', '44', '31'];
-    br=0;
-    var sum = 0;
-    for( var i = 0; i < elmt.length; i++ ){
-    sum += parseInt( nums[i], 10 ); 
-    }
-    var avg = sum/nums.length;
-    document.write( "The sum of all the elements is: " + sum + " The average is: " + avg );
+    <p id="arrfun"></p>
+    <p id="arrfun1"></p>
+    <script>
+      const nums = ['10', '17', '5', '42', '44', '31']
+      br = 0
+      var sum = 0
+      for (var i = 0; i < elmt.length; i++) {
+        sum += parseInt(nums[i], 10)
+      }
+      var avg = sum / nums.length
+      document.write(
+        'The sum of all the elements is: ' + sum + ' The average is: ' + avg
+      )
 
-    function Minmaxnum(){
-        var max_of_array = Math.max.apply(Math, nums);
+      function Minmaxnum () {
+        var max_of_array = Math.max.apply(Math, nums)
         var min_of_array = Math.min.apply(Math, nums)
-    }
-    document.getElementById("arrfun").innerHTML = max_of_array;
-    document.getElementById("arrfun1").innerHTML = min_of_array;
+      }
+      document.getElementById('arrfun').innerHTML = max_of_array
+      document.getElementById('arrfun1').innerHTML = min_of_array
+    </script>
 
-</script>
+    <p id="matrix"></p>
 
-<p id="matrix"></p>
-
-<script>
-function printSquareMatrix(size) {
-    size <= 20;
-    var mat = Array.from(Array(size), () => new Array(size));
-    for (var i = 0; i <= size - 1; i++) {
-        for (var j = 0; j < size - 1; j++) {
-          mat[i][j] = '*';
+    <script>
+      function printSquareMatrix (size) {
+        size <= 20
+        var mat = Array.from(Array(size), () => new Array(size))
+        for (var i = 0; i <= size - 1; i++) {
+          for (var j = 0; j < size - 1; j++) {
+            mat[i][j] = '*'
+          }
+          mat[i][j] = '*'
         }
-    mat[i][j] = '*';
-    }
-  return mat;
-}
-console.log(printSquareMatrix(3))
-</script>
-
-</body>
+        return mat
+      }
+      console.log(printSquareMatrix(3))
+    </script>
+  </body>
 </html>
