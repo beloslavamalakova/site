@@ -5,3 +5,6 @@ date_of_birth date(255),
 username varchar(255),
 password varchar(255)
 );
+
+INSERT INTO administration (FirstName, LastName, date_of_birth, username, password)
+VALUES ('Tom', 'Kirkman', '20.04.1975', 'user_123', '12345678TK');
